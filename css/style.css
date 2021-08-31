@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 50px;
+}
+
+body {
+    background-color: #FFF5E2;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+}
+
+header {
+    height: 100px;
+    padding: 30px;
+    background-color: #FDBB40;
+}
+
+main {
+    padding: 30px;
+    height: calc(100vh - 150px);
+    background-color: white;
+}
+
+.ingredient {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    padding: 0 10px;
+    background-color: #D33359;
+}
+
+footer {
+    padding: 10px;
+    height: 50px;
+    color: white;
+    background-color: #D33359;
+}

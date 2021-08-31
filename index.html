@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Create Your Burger</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- titolo -->
+            <h1>Create Your Burger</h1>
+        </header>
+        <main>
+            <!-- spazio per iserire il nome dell'hamburger -->
+            <input type="text" placeholder="Name your burger">
+    
+            <!-- inizio lista di ingredienti -->
+            <p>Ingredients</p>
+            <div class="column">
+                <!-- oggetto ingrediente: immagine, nome, checkbox -->
+                <div class="ingredient">
+                    <img src="img/cheese.svg" alt="">
+                    <span>Cheese</span>
+                    <span class="checkbox"></span>
+                    <span>add</span>
+                </div>
+                <div class="ingredient">
+                    <img src="img/fried-egg.svg" alt="">
+                    <span>Egg</span>
+                </div>
+                <div class="ingredient">
+                    <img src="img/mustard.svg" alt="">
+                    <span>Mustard</span>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ingredient">
+                    <img src="img/tomato.svg" alt="">
+                    <span>Tomatoe</span>
+                </div>
+                <div class="ingredient">
+                    <img src="img/lettuce.svg" alt="">
+                    <span>Lettuce</span>
+                </div>
+                <div class="ingredient">
+                    <img src="img/ketchup.svg" alt="">
+                    <span>Ketchup</span>
+                </div>
+            </div>
+    
+            <!-- spazio per inserire il codice coupon -->
+            <span>Discount Coupon</span>
+    
+        </main>
+        <footer>
+            <h3>Your price:</h3> <h3>$ 50</h3>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
