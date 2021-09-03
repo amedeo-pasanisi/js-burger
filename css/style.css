@@ -32,21 +32,99 @@ header img {
 
 main {
     padding: 30px;
-    height: calc(100% - 150px);
+    height: calc(100% - 170px);
     background-color: white;
+}
+
+#nome {
+    font-size: 25px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.ingredients {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#ingredients-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ingredient {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 main img {
     width: 50px;
+    margin-right: 20px;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .ingredient .checkbox input[type=checkbox] {
     visibility: hidden;
 }
 
+.fake-checkbox {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-color: #D33359;
+    margin-right: 10px;
+}
+
+span.add {
+    color: #D33359;
+}
+
+#ingredients-container {
+    margin-bottom: 30px;
+}
+
+#discount-container {
+    margin-bottom: 20px;
+}
+
+#discount-box {
+    width: 350px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFF5E2;
+    padding: 5px 10px;
+    margin-left: 20px;
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+}
+
+main button {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    background-color: #FDBB40;
+}
+
 footer {
-    padding: 10px;
-    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 70px;
     color: white;
     background-color: #D33359;
 }

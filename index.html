@@ -19,46 +19,82 @@
         </header>
         <main>
             <!-- spazio per iserire il nome dell'hamburger -->
-            <input type="text" placeholder="Name your burger">
+            <input id="nome" type="text" placeholder="Name your burger">
             <!-- inizio lista di ingredienti -->
-            <p>Ingredients</p>
+            <div class="ingredients">Ingredients</div>
             <!-- spazio per gli ingredienti -->
-            <div id="container">
-                <!-- oggetto ingrediente: immagine, nome, checkbox -->
-                <div class="ingredient">
-                    <img src="img/cheese.svg" alt="">
-                    <label for="cheese">cheese</label>
-                    <div class="checkbox">
-                        <input type="checkbox">
-                        <span class="add">add</span>
+            <div id="ingredients-container">
+                <div class="colonna">
+                    <!-- oggetto ingrediente: immagine, nome, checkbox -->
+                    <div class="ingredient">
+                        <img src="img/cheese.svg" alt="">
+                        <label for="cheese">Cheese</label>
+                        <div class="checkbox">
+                            <input type="checkbox">
+                            <span class="fake-checkbox"></span>
+                            <span class="add">add</span>
+                        </div>
+                    </div>
+                    <div class="ingredient">
+                        <img src="img/fried-egg.svg" alt="">
+                        <label for="egg">Egg</label>
+                        <div class="checkbox">
+                            <input type="checkbox">
+                            <span class="fake-checkbox"></span>
+                            <span class="add">add</span>
+                        </div>
+                    </div>
+                    <div class="ingredient">
+                        <img src="img/mustard.svg" alt="">
+                        <label for="mustard">Mustard</label>
+                        <div class="checkbox">
+                            <input type="checkbox">
+                            <span class="fake-checkbox"></span>
+                            <span class="add">add</span>
+                        </div>
                     </div>
                 </div>
-                <div class="ingredient">
-                    <img src="img/fried-egg.svg" alt="">
-                    <span>Egg</span>
-                </div>
-                <div class="ingredient">
-                    <img src="img/mustard.svg" alt="">
-                    <span>Mustard</span>
-                </div>
-                <div class="ingredient">
-                    <img src="img/tomato.svg" alt="">
-                    <span>Tomatoe</span>
-                </div>
-                <div class="ingredient">
-                    <img src="img/lettuce.svg" alt="">
-                    <span>Lettuce</span>
-                </div>
-                <div class="ingredient">
-                    <img src="img/ketchup.svg" alt="">
-                    <span>Ketchup</span>
+                <div class="colonna">
+                    <div class="ingredient">
+                        <img src="img/tomato.svg" alt="">
+                        <label for="tomatoe">Tomatoe</label>
+                        <div class="checkbox">
+                            <input type="checkbox">
+                            <span class="fake-checkbox"></span>
+                            <span class="add">add</span>
+                        </div>
+                    </div>
+                    <div class="ingredient">
+                        <img src="img/lettuce.svg" alt="">
+                        <label for="lettuce">Lettuce</label>
+                        <div class="checkbox">
+                            <input type="checkbox">
+                            <span class="fake-checkbox"></span>
+                            <span class="add">add</span>
+                        </div>
+                    </div>
+                    <div class="ingredient">
+                        <img src="img/ketchup.svg" alt="">
+                        <label for="ketchup">Ketchup</label>
+                        <div class="checkbox">
+                            <input type="checkbox">
+                            <span class="fake-checkbox"></span>
+                            <span class="add">add</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- spazio per inserire il codice coupon -->
-            <span>Discount Coupon</span>
+            <div id="discount-container">
+                <label for="discount">Discount Coupon</label>
+                <input id="discount-box" type="text" placeholder="insert code">
+            </div>
+            <div id="button-container">
+                <button>Calculate</button>
+            </div>
         </main>
         <footer>
-            <h3>Your price:</h3> <h3>$ 50</h3>
+            <h3>Your price:</h3> <h3>$ 0</h3>
         </footer>
     </div>
 
