@@ -4,39 +4,44 @@
     box-sizing: border-box;
 }
 
-img {
-    width: 50px;
-}
 
 body {
     background-color: #FFF5E2;
+    font-family: "khula", sans-serif;
 }
 
 .container {
     width: 50%;
     margin: auto;
+    height: 100vh;
 }
 
 header {
+    position: relative;
     height: 100px;
     padding: 30px;
     background-color: #FDBB40;
 }
 
+header img {
+    width: 180px;
+    position: absolute;
+    top: -15px;
+    right: -80px;
+}
+
 main {
     padding: 30px;
-    height: calc(100vh - 150px);
+    height: calc(100% - 150px);
     background-color: white;
 }
 
-.ingredient {
-    display: flex;
-    align-items: center;
+main img {
+    width: 50px;
 }
 
-.checkbox {
-    padding: 0 10px;
-    background-color: #D33359;
+.ingredient .checkbox input[type=checkbox] {
+    visibility: hidden;
 }
 
 footer {

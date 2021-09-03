@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <title>Create Your Burger</title>
 </head>
 <body>
@@ -12,20 +15,23 @@
         <header>
             <!-- titolo -->
             <h1>Create Your Burger</h1>
+            <img src="img/burger-top.png" alt="">
         </header>
         <main>
             <!-- spazio per iserire il nome dell'hamburger -->
             <input type="text" placeholder="Name your burger">
-    
             <!-- inizio lista di ingredienti -->
             <p>Ingredients</p>
-            <div class="column">
+            <!-- spazio per gli ingredienti -->
+            <div id="container">
                 <!-- oggetto ingrediente: immagine, nome, checkbox -->
                 <div class="ingredient">
                     <img src="img/cheese.svg" alt="">
-                    <span>Cheese</span>
-                    <span class="checkbox"></span>
-                    <span>add</span>
+                    <label for="cheese">cheese</label>
+                    <div class="checkbox">
+                        <input type="checkbox">
+                        <span class="add">add</span>
+                    </div>
                 </div>
                 <div class="ingredient">
                     <img src="img/fried-egg.svg" alt="">
@@ -35,8 +41,6 @@
                     <img src="img/mustard.svg" alt="">
                     <span>Mustard</span>
                 </div>
-            </div>
-            <div class="column">
                 <div class="ingredient">
                     <img src="img/tomato.svg" alt="">
                     <span>Tomatoe</span>
@@ -50,10 +54,8 @@
                     <span>Ketchup</span>
                 </div>
             </div>
-    
             <!-- spazio per inserire il codice coupon -->
             <span>Discount Coupon</span>
-    
         </main>
         <footer>
             <h3>Your price:</h3> <h3>$ 50</h3>
