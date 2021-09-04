@@ -76,7 +76,18 @@ main img {
     visibility: hidden;
 }
 
+.ingredient .checkbox input[type=checkbox]:checked + span::before {
+    position: absolute;
+    top: -5px;
+    left: -2px;
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    font-size: 20px;
+    font-weight: 900;
+}
+
 .fake-checkbox {
+    position: relative;
     display: inline-block;
     height: 15px;
     width: 15px;
